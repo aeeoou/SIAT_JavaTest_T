@@ -51,8 +51,8 @@ public interface Console {
 		do {
 			Console.inMsg(msg);		          	// 입력 안내 메세지를 띄운다.
 			input = sc.nextLine();				// 한 줄을 입력 받는다.
-			isGood = input.matches("[0-9] + "); // 입력 받은 것이 숫자인지 확인한다. (글자가 한글자 이상 len 글자 이하)
-			if(!isGood) Console.err("0 이상의 정수사 아닙니다.");	// 입력데이터가 거짓이면 에러메세지 출력
+			isGood = input.matches("[0-9]+"); // 입력 받은 것이 숫자인지 확인한다. (글자가 한글자 이상 len 글자 이하)
+			if(!isGood) Console.err("0 이상의 정수가 아닙니다.");	// 입력데이터가 거짓이면 에러메세지 출력
 		}while(!isGood);
 		
 		// 입력이 완료된 값을 숫자로 바꿔서 리턴 (왜냐 값을 문자로 받고 있어서..)

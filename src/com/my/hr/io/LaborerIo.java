@@ -31,9 +31,9 @@ public class LaborerIo {
 			switch(job) {
 			// ENUM 을 사용함으로써 코드의 가독성이 좋아졌다.
 			case LIST -> listLaborers();
-			case ADD -> addLaborers();
-			case FIX -> fixLaborers();
-			case DEL -> delLaborers();
+			case ADD -> addLaborer();
+			case FIX -> fixLaborer();
+			case DEL -> delLaborer();
 			}
 		}
 	}
